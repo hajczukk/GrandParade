@@ -1,0 +1,22 @@
+Feature: Obtain a report with the dates when the salaries and bonuses need to be paid
+	Two payments are done each month - base salary and bonus
+	The base salary is payed the last working day of the month
+	The bonus is payed 15th of the month, unless that day is a weekend. In that case, it is payed the first Wednesday after the 15th
+
+	Scenario: Report for one 'regular' month
+		Given the application for reports generation running
+		When May 2017 is provided to generate the report
+		Then the payday for bonus is 15th May 2017
+		And the payday for salary is 31st May 2017
+		
+	Scenario: Report for one 'semi-regular' month
+		Given the application for report generation running
+		When July 2017 is provided to generate the report
+		Then the payday for bonus is 19th July 2017
+		And the payday for salary is 31st July 2017
+		
+	Scenario: Report for 2 months - 'regular' and 'irregular'
+		Given the application for reports generation running
+		When April and May 2017 are provided to generate the report
+		Then the paydays for bonuses are 19th April 2017 and 15th May 2017
+		And the paydays for salaries are 28th April 2017 and 31st May 2017

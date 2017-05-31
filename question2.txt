@@ -1,0 +1,19 @@
+Hello,
+
+For better understanding of your needs, I would like to ask you some questions about the application for payday report generation.
+
+1. In the given scenario, it only matters if the payday is during the weekend or not. And how about the Bank Holidays? If they also should matter, then you will be asked to provide me the dates of the Bank Holidays or the countries I should pay attention to.
+2. In terms of the method of providing the months, we have two fields to fill: (Generate report starting) 'FROM' and 'TO'. 
+	a) Which type of control do you prefer? Textbox, dropdown (or 2 - one for month, second for year) or regular calendar control?
+	b) Do you need possibility to disable the 'FROM' option? Then the report would be generated starting from the current month.
+3. From the performance point of view, I would like to know what are the predictable date ranges which will be used there. Are you able to give me the number of months/years?
+
+And the last two questions about the report itself.
+
+4. Does a table with following columns: Month, Year, Bonus Payment Date and Salary Payment Date will be enough? Or you need some additional columns like eg. Day of Week of the Bonus/Salary Payment Date?
+5. Do you have any preferences for the date formatting?
+
+Please review my questions and give me the answer soon,
+
+Best regards,
+Katarzyna Hajczuk
